@@ -1,2 +1,2 @@
 # Diagnosing the Compositional Knowledge of Vision Language Models from a Game-Theoretic View
-The author's implementation of the ICML 2024 paper.
+The code will be updated soon. Stay tuned!
