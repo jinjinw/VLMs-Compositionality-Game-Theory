@@ -120,7 +120,12 @@ def vis_results(scorefile_path):
         y = np.array(interaction_change_results)
         y_metric = np.array(interaction_results)
         metric = np.mean(y_metric)
-        print(f"Sensitivity_{meta_i}_{meta_j}_{meta_k}: {metric}")
+        if meta_i == 1 and  meta_j == 1 and  meta_k == 0:
+            print(f"Q_R&O: {metric}")
+        if meta_i == 0 and  meta_j == 1 and  meta_k == 0:
+            print(f"Q_R: {metric}")
+        if meta_i == 1 and  meta_j == 0 and  meta_k == 0:
+            print(f"Q_O: {metric}")
         x = np.array(acc_results)
         rho = scipy.stats.pearsonr(x, y)[0]
         print(f'rho:{rho}')
