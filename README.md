@@ -33,7 +33,7 @@ Download the VG_relation dataset to *./data* from [here](https://github.com/mert
 
 ## Evaluations
 
-To evaluate the model performance, please run: 
+To evaluate the model's compositional knowledge, please run: 
 
 ```
 python3 inference.py
